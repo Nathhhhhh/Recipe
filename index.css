@@ -1,0 +1,10 @@
+.list-group-flush > .list-group-item:last-child {
+    border-width: 0 0 var(--bs-list-group-border-width) !important;
+}
+#list-recipes {
+    display: grid;
+    margin-top: 50px;
+    width: 100%;
+    grid-gap: 25px;
+    grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}

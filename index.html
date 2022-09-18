@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body class="container">
+    <div class="toast bottom-0 start-50 translate-middle-x toast-container align-items-center text-bg-danger border-0"
+        role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Maximum ingredients reached
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+        </div>
+    </div>
+    <div class="mt-5">
+        <!--<div class="m-5 text-center">
+            <p>Translate this page:</p>
+            <div id="google_translate_element">
+            </div>
+        </div> -->
+        <h1 class="text-center">What do we eat ?</h1>
+        <div class="row justify-content-center">
+            <div class="mb-3 col-md-4 flex-row d-flex">
+                <div>
+                    <label for="ingredients" class="form-label">Ingredients (max 4)</label>
+                    <input type="text" class="form-control" id="ingredients" placeholder="tomato">
+                </div>
+                <button type="submit" class="btn btn-primary ms-3 mt-4" id="submit">Submit</button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <ul class="list-group list-group-flush d-flex flex-md-row justify-content-center" id='list-ingredients'>
+            </ul>
+        </div>
+        <div class="" id='list-recipes'>
+            <!--  <div class="col-md-4 d-flex justify-content-center mb-5 mb-md-auto">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+</body>
+
+</html>
